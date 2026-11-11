@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stillfeed browser extension: hide Reels, Shorts and endless feeds</title>
+<meta name="description" content="Stillfeed is a free browser extension for Chrome, Brave, Edge, Opera, Arc and Firefox that hides Reels, Shorts and endless feeds on eight sites. No account.">
+<link rel="canonical" href="https://stillfeed.pro/extension/">
+<link rel="icon" href="assets/icon.png" type="image/png">
+<meta property="og:title" content="Stillfeed browser extension">
+<meta property="og:description" content="Hide Reels, Shorts and endless feeds on Instagram, YouTube, X, Reddit, Facebook, TikTok, LinkedIn and Snapchat. Free, no account.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://stillfeed.github.io/stillfeed-extension/assets/social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --bg:#fbfaf7; --fg:#14130f; --muted:#5b584f; --line:#e3e0d6; --accent:#14130f; --on-accent:#fbfaf7; --link:#0b5cad; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0e0d0a; --fg:#f3f1ea; --muted:#a9a69b; --line:#2b2a24; --accent:#f3f1ea; --on-accent:#0e0d0a; --link:#7db4ee; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  img.icon { width:56px; height:56px; border-radius:12px; display:block; }
+  h1 { font-size: clamp(1.8rem, 5vw, 2.4rem); line-height:1.15; margin:1rem 0 .75rem; }
+  h2 { font-size:1.25rem; margin:2.25rem 0 .5rem; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  a { color: var(--link); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--link); outline-offset: 3px; }
+  .btns { display:flex; flex-wrap:wrap; gap:.75rem; margin:1.5rem 0 .5rem; }
+  .btn { display:inline-block; padding:.7rem 1.1rem; min-height:44px; border-radius:999px; background:var(--accent); color:var(--on-accent); text-decoration:none; font-weight:600; }
+  ul { padding-left:1.2rem; }
+  li { margin:.3rem 0; }
+  table { width:100%; border-collapse:collapse; margin-top:.5rem; font-size:.95rem; }
+  th, td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { width:7.5rem; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); font-size:.9rem; color:var(--muted); }
+  img.shot { width:100%; height:auto; border-radius:12px; border:1px solid var(--line); margin-top:1.5rem; }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="assets/icon.png" width="56" height="56" alt="Stillfeed icon">
+  <h1>Stillfeed browser extension</h1>
+  <p>A free desktop extension that hides Reels, Shorts and endless feeds on Instagram, YouTube, X, Reddit, Facebook, TikTok, LinkedIn and Snapchat. It leaves messages, profiles, search and the posts you open alone. No account, and nothing leaves your browser.</p>
+
+  <div class="btns">
+    <a class="btn" href="https://chromewebstore.google.com/detail/stillfeed-hide-reels-shor/hbdcekalnlndonbliecjfiidffcppmao" rel="noopener">Add to Chrome</a>
+    <a class="btn" href="https://addons.mozilla.org/en-US/firefox/addon/stillfeed/" rel="noopener">Add to Firefox</a>
+  </div>
+  <p class="muted">Chrome, Brave, Edge, Opera and Arc install from the Chrome Web Store listing. Firefox 128 or newer for the Firefox version.</p>
+
+  <img class="shot" src="assets/social-card.png" width="1280" height="800" loading="lazy" alt="The Stillfeed popup with a blocking switch for each of the eight sites and a daily limit bar">
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Hides the Reels, Shorts, For You, Explore and r/popular style surfaces on eight sites. Each site has its own switch.</li>
+    <li>A daily limit that closes the sites until midnight, with five extra minutes once per visit.</li>
+    <li>A session timer of two, five, ten or fifteen minutes per visit.</li>
+    <li>Quiet hours: named schedules that close chosen sites on chosen days, overnight included.</li>
+    <li>A pause of five or ten seconds before a site opens, and grayscale.</li>
+  </ul>
+
+  <h2>Per site</h2>
+  <table>
+    <tbody>
+      <tr><th scope="row">Instagram</th><td>Reels page and single reels go to your home page; Reels hidden in the menu and collapsed in the feed; Explore grid hidden. Search still works.</td></tr>
+      <tr><th scope="row">YouTube</th><td>Shorts hidden in the menu and shelves; Shorts pages blocked.</td></tr>
+      <tr><th scope="row">X</th><td>Home timeline opens on Following; Trending and right-column trends hidden.</td></tr>
+      <tr><th scope="row">Reddit</th><td>r/popular and r/all blocked.</td></tr>
+      <tr><th scope="row">Facebook</th><td>Reels and Watch pages go home; Reels tab, menu entries and feed shelf hidden.</td></tr>
+      <tr><th scope="row">TikTok</th><td>For You, Explore, LIVE and Short dramas hidden; you land on Following.</td></tr>
+      <tr><th scope="row">LinkedIn</th><td>My Network goes to the invitation manager; Games goes to your feed; sponsored posts removed from the feed (English only).</td></tr>
+      <tr><th scope="row">Snapchat</th><td>Stories, Spotlight and Lenses hidden; you land in Chat.</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">It does not block arbitrary websites. The time limits apply in the browser where you set them.</p>
+
+  <h2>More</h2>
+  <ul>
+    <li><a href="https://stillfeed.pro/extension/">stillfeed.pro/extension</a>: install steps, and a ZIP for manual install</li>
+    <li><a href="https://stillfeed.pro/">stillfeed.pro</a>: the iPhone app and the guides</li>
+    <li><a href="https://stillfeed.pro/privacy/#browser-extension">Extension privacy</a></li>
+    <li><a href="https://stillfeed.pro/blog/chrome-website-blocker/">How to block a website in Chrome, or just the feed</a></li>
+  </ul>
+
+  <footer>
+    <p>Stillfeed is made by Gokhan Tosun. Contact: <a href="mailto:gokhan@stillfeed.pro">gokhan@stillfeed.pro</a>. Not affiliated with Instagram, Meta, YouTube, Google, X Corp, Reddit, Snap, LinkedIn or TikTok.</p>
+  </footer>
+</main>
+</body>
+</html>
