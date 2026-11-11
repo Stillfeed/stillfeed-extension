@@ -21,5 +21,5 @@ This repository holds only the landing page published at `https://stillfeed.gith
 
 ## Contact
 
-Gokhan Tosun, gokhan@stillfeed.pro. Stillfeed is not affiliated with Instagram, Meta, YouTube, Google, X Corp, Reddit, Snap, LinkedIn or TikTok.
+Made by the Stillfeed Team, https://stillfeed.pro/. Stillfeed is not affiliated with Instagram, Meta, YouTube, Google, X Corp, Reddit, Snap, LinkedIn or TikTok.
 
